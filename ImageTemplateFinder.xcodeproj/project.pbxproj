@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFDA62972267C3A300E331DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDA62962267C3A300E331DB /* AppDelegate.swift */; };
+		AFDA62992267C3A300E331DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDA62982267C3A300E331DB /* ViewController.swift */; };
+		AFDA629B2267C3A400E331DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDA629A2267C3A400E331DB /* Assets.xcassets */; };
+		AFDA629E2267C3A400E331DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDA629C2267C3A400E331DB /* Main.storyboard */; };
+		AFDA62AA2267C3A400E331DB /* ImageTemplateFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDA62A92267C3A400E331DB /* ImageTemplateFinderTests.swift */; };
+		AFDA62B52267C3A400E331DB /* ImageTemplateFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDA62B42267C3A400E331DB /* ImageTemplateFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFDA62A62267C3A400E331DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFDA628B2267C3A300E331DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDA62922267C3A300E331DB;
+			remoteInfo = ImageTemplateFinder;
+		};
+		AFDA62B12267C3A400E331DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFDA628B2267C3A300E331DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDA62922267C3A300E331DB;
+			remoteInfo = ImageTemplateFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFDA62932267C3A300E331DB /* ImageTemplateFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTemplateFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDA62962267C3A300E331DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFDA62982267C3A300E331DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFDA629A2267C3A400E331DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFDA629D2267C3A400E331DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFDA629F2267C3A400E331DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFDA62A02267C3A400E331DB /* ImageTemplateFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageTemplateFinder.entitlements; sourceTree = "<group>"; };
+		AFDA62A52267C3A400E331DB /* ImageTemplateFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageTemplateFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDA62A92267C3A400E331DB /* ImageTemplateFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTemplateFinderTests.swift; sourceTree = "<group>"; };
+		AFDA62AB2267C3A400E331DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFDA62B02267C3A400E331DB /* ImageTemplateFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageTemplateFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDA62B42267C3A400E331DB /* ImageTemplateFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTemplateFinderUITests.swift; sourceTree = "<group>"; };
+		AFDA62B62267C3A400E331DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFDA62902267C3A300E331DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDA62A22267C3A400E331DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDA62AD2267C3A400E331DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFDA628A2267C3A300E331DB = {
+			isa = PBXGroup;
+			children = (
+				AFDA62952267C3A300E331DB /* ImageTemplateFinder */,
+				AFDA62A82267C3A400E331DB /* ImageTemplateFinderTests */,
+				AFDA62B32267C3A400E331DB /* ImageTemplateFinderUITests */,
+				AFDA62942267C3A300E331DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFDA62942267C3A300E331DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFDA62932267C3A300E331DB /* ImageTemplateFinder.app */,
+				AFDA62A52267C3A400E331DB /* ImageTemplateFinderTests.xctest */,
+				AFDA62B02267C3A400E331DB /* ImageTemplateFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFDA62952267C3A300E331DB /* ImageTemplateFinder */ = {
+			isa = PBXGroup;
+			children = (
+				AFDA62962267C3A300E331DB /* AppDelegate.swift */,
+				AFDA62982267C3A300E331DB /* ViewController.swift */,
+				AFDA629A2267C3A400E331DB /* Assets.xcassets */,
+				AFDA629C2267C3A400E331DB /* Main.storyboard */,
+				AFDA629F2267C3A400E331DB /* Info.plist */,
+				AFDA62A02267C3A400E331DB /* ImageTemplateFinder.entitlements */,
+			);
+			path = ImageTemplateFinder;
+			sourceTree = "<group>";
+		};
+		AFDA62A82267C3A400E331DB /* ImageTemplateFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFDA62A92267C3A400E331DB /* ImageTemplateFinderTests.swift */,
+				AFDA62AB2267C3A400E331DB /* Info.plist */,
+			);
+			path = ImageTemplateFinderTests;
+			sourceTree = "<group>";
+		};
+		AFDA62B32267C3A400E331DB /* ImageTemplateFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFDA62B42267C3A400E331DB /* ImageTemplateFinderUITests.swift */,
+				AFDA62B62267C3A400E331DB /* Info.plist */,
+			);
+			path = ImageTemplateFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFDA62922267C3A300E331DB /* ImageTemplateFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDA62B92267C3A500E331DB /* Build configuration list for PBXNativeTarget "ImageTemplateFinder" */;
+			buildPhases = (
+				AFDA628F2267C3A300E331DB /* Sources */,
+				AFDA62902267C3A300E331DB /* Frameworks */,
+				AFDA62912267C3A300E331DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageTemplateFinder;
+			productName = ImageTemplateFinder;
+			productReference = AFDA62932267C3A300E331DB /* ImageTemplateFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFDA62A42267C3A400E331DB /* ImageTemplateFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDA62BC2267C3A500E331DB /* Build configuration list for PBXNativeTarget "ImageTemplateFinderTests" */;
+			buildPhases = (
+				AFDA62A12267C3A400E331DB /* Sources */,
+				AFDA62A22267C3A400E331DB /* Frameworks */,
+				AFDA62A32267C3A400E331DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFDA62A72267C3A400E331DB /* PBXTargetDependency */,
+			);
+			name = ImageTemplateFinderTests;
+			productName = ImageTemplateFinderTests;
+			productReference = AFDA62A52267C3A400E331DB /* ImageTemplateFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFDA62AF2267C3A400E331DB /* ImageTemplateFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDA62BF2267C3A500E331DB /* Build configuration list for PBXNativeTarget "ImageTemplateFinderUITests" */;
+			buildPhases = (
+				AFDA62AC2267C3A400E331DB /* Sources */,
+				AFDA62AD2267C3A400E331DB /* Frameworks */,
+				AFDA62AE2267C3A400E331DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFDA62B22267C3A400E331DB /* PBXTargetDependency */,
+			);
+			name = ImageTemplateFinderUITests;
+			productName = ImageTemplateFinderUITests;
+			productReference = AFDA62B02267C3A400E331DB /* ImageTemplateFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFDA628B2267C3A300E331DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Stefan Szarek";
+				TargetAttributes = {
+					AFDA62922267C3A300E331DB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					AFDA62A42267C3A400E331DB = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AFDA62922267C3A300E331DB;
+					};
+					AFDA62AF2267C3A400E331DB = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AFDA62922267C3A300E331DB;
+					};
+				};
+			};
+			buildConfigurationList = AFDA628E2267C3A300E331DB /* Build configuration list for PBXProject "ImageTemplateFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFDA628A2267C3A300E331DB;
+			productRefGroup = AFDA62942267C3A300E331DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFDA62922267C3A300E331DB /* ImageTemplateFinder */,
+				AFDA62A42267C3A400E331DB /* ImageTemplateFinderTests */,
+				AFDA62AF2267C3A400E331DB /* ImageTemplateFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFDA62912267C3A300E331DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDA629B2267C3A400E331DB /* Assets.xcassets in Resources */,
+				AFDA629E2267C3A400E331DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDA62A32267C3A400E331DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDA62AE2267C3A400E331DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFDA628F2267C3A300E331DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDA62992267C3A300E331DB /* ViewController.swift in Sources */,
+				AFDA62972267C3A300E331DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDA62A12267C3A400E331DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDA62AA2267C3A400E331DB /* ImageTemplateFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDA62AC2267C3A400E331DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDA62B52267C3A400E331DB /* ImageTemplateFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFDA62A72267C3A400E331DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFDA62922267C3A300E331DB /* ImageTemplateFinder */;
+			targetProxy = AFDA62A62267C3A400E331DB /* PBXContainerItemProxy */;
+		};
+		AFDA62B22267C3A400E331DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFDA62922267C3A300E331DB /* ImageTemplateFinder */;
+			targetProxy = AFDA62B12267C3A400E331DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFDA629C2267C3A400E331DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFDA629D2267C3A400E331DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFDA62B72267C3A500E331DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFDA62B82267C3A500E331DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AFDA62BA2267C3A500E331DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImageTemplateFinder/ImageTemplateFinder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 895R5HCDJY;
+				INFOPLIST_FILE = ImageTemplateFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pir0.ImageTemplateFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFDA62BB2267C3A500E331DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImageTemplateFinder/ImageTemplateFinder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 895R5HCDJY;
+				INFOPLIST_FILE = ImageTemplateFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pir0.ImageTemplateFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AFDA62BD2267C3A500E331DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 895R5HCDJY;
+				INFOPLIST_FILE = ImageTemplateFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pir0.ImageTemplateFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTemplateFinder.app/Contents/MacOS/ImageTemplateFinder";
+			};
+			name = Debug;
+		};
+		AFDA62BE2267C3A500E331DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 895R5HCDJY;
+				INFOPLIST_FILE = ImageTemplateFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pir0.ImageTemplateFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTemplateFinder.app/Contents/MacOS/ImageTemplateFinder";
+			};
+			name = Release;
+		};
+		AFDA62C02267C3A500E331DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 895R5HCDJY;
+				INFOPLIST_FILE = ImageTemplateFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pir0.ImageTemplateFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ImageTemplateFinder;
+			};
+			name = Debug;
+		};
+		AFDA62C12267C3A500E331DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 895R5HCDJY;
+				INFOPLIST_FILE = ImageTemplateFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pir0.ImageTemplateFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ImageTemplateFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFDA628E2267C3A300E331DB /* Build configuration list for PBXProject "ImageTemplateFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDA62B72267C3A500E331DB /* Debug */,
+				AFDA62B82267C3A500E331DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDA62B92267C3A500E331DB /* Build configuration list for PBXNativeTarget "ImageTemplateFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDA62BA2267C3A500E331DB /* Debug */,
+				AFDA62BB2267C3A500E331DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDA62BC2267C3A500E331DB /* Build configuration list for PBXNativeTarget "ImageTemplateFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDA62BD2267C3A500E331DB /* Debug */,
+				AFDA62BE2267C3A500E331DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDA62BF2267C3A500E331DB /* Build configuration list for PBXNativeTarget "ImageTemplateFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDA62C02267C3A500E331DB /* Debug */,
+				AFDA62C12267C3A500E331DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFDA628B2267C3A300E331DB /* Project object */;
+}
