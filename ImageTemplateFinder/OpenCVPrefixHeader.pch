@@ -1,0 +1,24 @@
+//
+//  OpenCVPrefixHeader.pch
+//  ImageTemplateFinder
+//
+//  Created by Stefan Szarek on 19/04/2019.
+//  Copyright © 2019 Stefan Szarek. All rights reserved.
+//
+
+#ifndef OpenCVPrefixHeader_pch
+#define OpenCVPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __cplusplus
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdocumentation"
+
+#include <opencv2/opencv.hpp>
+
+#pragma clang pop
+#endif
+
+#endif /* OpenCVPrefixHeader_pch */
