@@ -12,12 +12,23 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var templateImageView: NSImageCell!
     @IBOutlet weak var imageImageView: NSImageView!
+    lazy var openImageView: ImageUploadView = {
+        let nib = NSNib(nibNamed: "ITFImageUploadView", bundle: nil)
+        var objects: NSArray?
+        nib?.instantiate(withOwner: self, topLevelObjects: &objects)
+        if let objects = objects,
+            let openImageView = objects.filter({$0 is ImageUploadView}).first as? ImageUploadView {
+            return openImageView
+        }
+        
+        return ImageUploadView()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(OpenCVWrapper.openCVVersion());
+        self.view.addSubview(openImageView)
     }
 
     override var representedObject: Any? {

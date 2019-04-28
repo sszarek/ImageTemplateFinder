@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF880DF9226D08B700AE0420 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AF880DF8226D08B700AE0420 /* .gitignore */; };
+		AFAFADE62275B2AE00B57BB7 /* ImageUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAFADE52275B2AE00B57BB7 /* ImageUploadView.swift */; };
+		AFAFADEA2275B35200B57BB7 /* ITFImageUploadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFAFADE92275B35200B57BB7 /* ITFImageUploadView.xib */; };
 		AFD71C5A22691AE9001078F6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD71C5922691AE9001078F6 /* opencv2.framework */; };
 		AFD71C5C22691B39001078F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD71C5B22691B39001078F6 /* CoreGraphics.framework */; };
 		AFD71C5E22691B42001078F6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD71C5D22691B42001078F6 /* CoreMedia.framework */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		AF880DF5226A643800AE0420 /* OpenCVPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVPrefixHeader.pch; sourceTree = "<group>"; };
 		AF880DF8226D08B700AE0420 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AFAFADE52275B2AE00B57BB7 /* ImageUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadView.swift; sourceTree = "<group>"; };
+		AFAFADE92275B35200B57BB7 /* ITFImageUploadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITFImageUploadView.xib; sourceTree = "<group>"; };
 		AFD71C5922691AE9001078F6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		AFD71C5B22691B39001078F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AFD71C5D22691B42001078F6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -92,6 +96,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFAFADE72275B2DC00B57BB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFDA629A2267C3A400E331DB /* Assets.xcassets */,
+				AFDA629C2267C3A400E331DB /* Main.storyboard */,
+				AFDA629F2267C3A400E331DB /* Info.plist */,
+				AFDA62A02267C3A400E331DB /* ImageTemplateFinder.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFAFADE82275B2FB00B57BB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFAFADE52275B2AE00B57BB7 /* ImageUploadView.swift */,
+				AFAFADE92275B35200B57BB7 /* ITFImageUploadView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AFD71C55226919BB001078F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,15 +152,13 @@
 		AFDA62952267C3A300E331DB /* ImageTemplateFinder */ = {
 			isa = PBXGroup;
 			children = (
+				AFAFADE82275B2FB00B57BB7 /* Views */,
 				AFD71C6222691B99001078F6 /* OpenCVWrapper.h */,
 				AFD71C6322691B99001078F6 /* OpenCVWrapper.mm */,
 				AFDA62962267C3A300E331DB /* AppDelegate.swift */,
 				AFDA62982267C3A300E331DB /* ViewController.swift */,
 				AFD71C6122691B99001078F6 /* ImageTemplateFinder-Bridging-Header.h */,
-				AFDA629A2267C3A400E331DB /* Assets.xcassets */,
-				AFDA629C2267C3A400E331DB /* Main.storyboard */,
-				AFDA629F2267C3A400E331DB /* Info.plist */,
-				AFDA62A02267C3A400E331DB /* ImageTemplateFinder.entitlements */,
+				AFAFADE72275B2DC00B57BB7 /* Resources */,
 				AF880DF5226A643800AE0420 /* OpenCVPrefixHeader.pch */,
 			);
 			path = ImageTemplateFinder;
@@ -266,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF880DF9226D08B700AE0420 /* .gitignore in Resources */,
+				AFAFADEA2275B35200B57BB7 /* ITFImageUploadView.xib in Resources */,
 				AFDA629B2267C3A400E331DB /* Assets.xcassets in Resources */,
 				AFDA629E2267C3A400E331DB /* Main.storyboard in Resources */,
 			);
@@ -295,6 +318,7 @@
 				AFDA62992267C3A300E331DB /* ViewController.swift in Sources */,
 				AFDA62972267C3A300E331DB /* AppDelegate.swift in Sources */,
 				AFD71C6422691B99001078F6 /* OpenCVWrapper.mm in Sources */,
+				AFAFADE62275B2AE00B57BB7 /* ImageUploadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ImageTemplateFinder/ImageTemplateFinder.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ImageTemplateFinder/Resources/ImageTemplateFinder.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -471,7 +495,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/OpenCVPrefixHeader.pch";
-				INFOPLIST_FILE = ImageTemplateFinder/Info.plist;
+				INFOPLIST_FILE = ImageTemplateFinder/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -490,7 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ImageTemplateFinder/ImageTemplateFinder.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ImageTemplateFinder/Resources/ImageTemplateFinder.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -500,7 +524,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/OpenCVPrefixHeader.pch";
-				INFOPLIST_FILE = ImageTemplateFinder/Info.plist;
+				INFOPLIST_FILE = ImageTemplateFinder/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
