@@ -8,12 +8,12 @@
         <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe" customClass="ImageUploadView" customModule="ImageTemplateFinder" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+        <customView wantsLayer="YES" id="c22-O7-iKe" customClass="ImageUploadView" customModule="ImageTemplateFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zT-Yo-s8D">
-                    <rect key="frame" x="148" y="48" width="184" height="17"/>
+                    <rect key="frame" x="33" y="37" width="184" height="17"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Click to open image" id="c3S-cS-cGB">
                         <font key="font" metaFont="system"/>
@@ -22,7 +22,7 @@
                     </textFieldCell>
                 </textField>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lzn-Zm-hUN">
-                    <rect key="frame" x="165" y="73" width="150" height="150"/>
+                    <rect key="frame" x="50" y="62" width="150" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="upload" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8GD-fh-OOQ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>

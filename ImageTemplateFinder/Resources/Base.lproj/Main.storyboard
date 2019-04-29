@@ -225,13 +225,109 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ImageTemplateFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="434"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="PJK-fU-FKn">
+                                <rect key="frame" x="481" y="8" width="5" height="418"/>
+                            </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tza-qa-nea">
+                                <rect key="frame" x="8" y="8" width="467" height="418"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="N5c-xX-SNZ"/>
+                            </imageView>
+                            <box borderType="line" title="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-Fw-pgL">
+                                <rect key="frame" x="489" y="4" width="206" height="114"/>
+                                <view key="contentView" id="yVj-Vl-TF9">
+                                    <rect key="frame" x="3" y="3" width="200" height="96"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxE-tj-219">
+                                            <rect key="frame" x="37" y="48" width="122" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Open Image" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S00-Gi-UU8">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="openImageButtonClicked:" target="XfG-lQ-9wD" id="HOJ-HP-aLC"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-eQ-bJh">
+                                            <rect key="frame" x="37" y="15" width="122" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Close Image" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="taJ-BH-2ie">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="peT-Xm-Zt3"/>
+                                </constraints>
+                            </box>
+                            <box borderType="line" title="Template" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-qp-NSF">
+                                <rect key="frame" x="489" y="122" width="206" height="304"/>
+                                <view key="contentView" id="E6U-JU-cSa">
+                                    <rect key="frame" x="3" y="3" width="200" height="286"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-W8-0Sf">
+                                            <rect key="frame" x="35" y="238" width="132" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Open Template" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZEv-I0-GmH">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-H2-qGN">
+                                            <rect key="frame" x="34" y="205" width="134" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Close Template" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UuM-nR-WJ7">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qPr-eg-JCn">
+                                            <rect key="frame" x="12" y="20" width="176" height="178"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="picture" id="KbU-YS-hyP"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="J7Q-uv-K9A"/>
+                                    <constraint firstAttribute="height" constant="300" id="dgn-VV-ilW"/>
+                                </constraints>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wm8-Fw-pgL" firstAttribute="leading" secondItem="PJK-fU-FKn" secondAttribute="trailing" constant="8" id="0j4-kd-Swm"/>
+                            <constraint firstItem="HHs-qp-NSF" firstAttribute="width" secondItem="yVj-Vl-TF9" secondAttribute="width" id="5xV-iE-wnz"/>
+                            <constraint firstItem="Tza-qa-nea" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="7Ag-hv-Yid"/>
+                            <constraint firstItem="HHs-qp-NSF" firstAttribute="leading" secondItem="PJK-fU-FKn" secondAttribute="trailing" constant="8" id="9T6-yb-vhk"/>
+                            <constraint firstItem="Tza-qa-nea" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="BCS-4g-uXs"/>
+                            <constraint firstItem="Wm8-Fw-pgL" firstAttribute="top" secondItem="HHs-qp-NSF" secondAttribute="bottom" constant="8" id="IJk-O2-rd3"/>
+                            <constraint firstAttribute="trailing" secondItem="Wm8-Fw-pgL" secondAttribute="trailing" constant="8" id="Moq-fM-2kN"/>
+                            <constraint firstAttribute="trailing" secondItem="HHs-qp-NSF" secondAttribute="trailing" constant="8" id="SlC-O2-9Xu"/>
+                            <constraint firstItem="PJK-fU-FKn" firstAttribute="leading" secondItem="Tza-qa-nea" secondAttribute="trailing" constant="8" symbolic="YES" id="Usz-nQ-fVu"/>
+                            <constraint firstItem="PJK-fU-FKn" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="hrg-kD-ttq"/>
+                            <constraint firstItem="HHs-qp-NSF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="n5P-Xv-bg4"/>
+                            <constraint firstAttribute="bottom" secondItem="PJK-fU-FKn" secondAttribute="bottom" constant="8" id="nOL-nf-3Op"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wm8-Fw-pgL" secondAttribute="bottom" constant="8" id="sIR-Y7-Idt"/>
+                            <constraint firstAttribute="bottom" secondItem="Tza-qa-nea" secondAttribute="bottom" constant="8" id="zO4-ym-TvK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Tza-qa-nea" id="dL1-Ck-CGG"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="949"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="picture" width="256" height="256"/>
+    </resources>
 </document>
