@@ -11,9 +11,14 @@ import Cocoa
 class ViewController: NSViewController {
     
     @IBOutlet weak var imageView: NSImageView!
+    @IBOutlet weak var templateView: NSImageView!
     @IBAction func openImageButtonClicked(_ sender: Any) {
         guard let url = getImageUrl() else { return }
         imageView.image = NSImage.init(contentsOf: url)
+    }
+    @IBAction func openTemplateButtonClicked(_ sender: Any) {
+        guard let url = getImageUrl() else { return }
+        templateView.image = NSImage.init(contentsOf: url)
     }
     
     override func viewDidLoad() {

@@ -197,6 +197,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="openTemplateButtonClicked:" target="XfG-lQ-9wD" id="fJA-m8-09f"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-H2-qGN">
                                             <rect key="frame" x="34" y="205" width="134" height="32"/>
@@ -238,6 +241,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Tza-qa-nea" id="dL1-Ck-CGG"/>
+                        <outlet property="templateView" destination="qPr-eg-JCn" id="eNE-9P-gnN"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
