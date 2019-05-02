@@ -143,18 +143,18 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="ImageTemplateFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="700" height="434"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="517"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="PJK-fU-FKn">
-                                <rect key="frame" x="481" y="8" width="5" height="418"/>
+                                <rect key="frame" x="481" y="8" width="5" height="501"/>
                             </box>
                             <imageView horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Tza-qa-nea">
-                                <rect key="frame" x="8" y="8" width="467" height="418"/>
+                                <rect key="frame" x="8" y="8" width="467" height="501"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="N5c-xX-SNZ"/>
                             </imageView>
                             <box borderType="line" title="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-Fw-pgL">
-                                <rect key="frame" x="489" y="4" width="206" height="114"/>
+                                <rect key="frame" x="489" y="55" width="206" height="114"/>
                                 <view key="contentView" id="yVj-Vl-TF9">
                                     <rect key="frame" x="3" y="3" width="200" height="96"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,14 +188,13 @@
                                 </constraints>
                             </box>
                             <box borderType="line" title="Template" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-qp-NSF">
-                                <rect key="frame" x="489" y="122" width="206" height="304"/>
+                                <rect key="frame" x="489" y="173" width="206" height="336"/>
                                 <view key="contentView" id="E6U-JU-cSa">
-                                    <rect key="frame" x="3" y="3" width="200" height="286"/>
+                                    <rect key="frame" x="3" y="3" width="200" height="318"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-W8-0Sf">
-                                            <rect key="frame" x="35" y="238" width="132" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-W8-0Sf">
+                                            <rect key="frame" x="34" y="282" width="132" height="32"/>
                                             <buttonCell key="cell" type="push" title="Open Template" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZEv-I0-GmH">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -204,9 +203,8 @@
                                                 <action selector="openTemplateButtonClicked:" target="XfG-lQ-9wD" id="fJA-m8-09f"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-H2-qGN">
-                                            <rect key="frame" x="34" y="205" width="134" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-H2-qGN">
+                                            <rect key="frame" x="33" y="249" width="134" height="32"/>
                                             <buttonCell key="cell" type="push" title="Close Template" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UuM-nR-WJ7">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -215,16 +213,40 @@
                                                 <action selector="closeTemplateButtonClicked:" target="XfG-lQ-9wD" id="2ld-hn-w40"/>
                                             </connections>
                                         </button>
-                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qPr-eg-JCn">
-                                            <rect key="frame" x="12" y="20" width="176" height="178"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EiQ-D6-7Gk">
+                                            <rect key="frame" x="34" y="216" width="128" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Mark template" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i5C-gA-ybx">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qPr-eg-JCn">
+                                            <rect key="frame" x="10" y="8" width="180" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="1L9-6C-xUY"/>
+                                                <constraint firstAttribute="height" constant="180" id="U4q-BB-dxw"/>
+                                            </constraints>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="picture" id="KbU-YS-hyP"/>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6hy-H2-qGN" firstAttribute="leading" secondItem="E6U-JU-cSa" secondAttribute="leading" constant="39" id="70M-Z7-5gf"/>
+                                        <constraint firstAttribute="trailing" secondItem="qPr-eg-JCn" secondAttribute="trailing" constant="10" id="8fF-rM-sIu"/>
+                                        <constraint firstItem="DGN-W8-0Sf" firstAttribute="leading" secondItem="E6U-JU-cSa" secondAttribute="leading" constant="40" id="Fxd-cc-doN"/>
+                                        <constraint firstItem="6hy-H2-qGN" firstAttribute="top" secondItem="DGN-W8-0Sf" secondAttribute="bottom" constant="12" id="JfD-tw-QUo"/>
+                                        <constraint firstItem="EiQ-D6-7Gk" firstAttribute="leading" secondItem="E6U-JU-cSa" secondAttribute="leading" constant="40" id="Lnw-sj-mzr"/>
+                                        <constraint firstItem="EiQ-D6-7Gk" firstAttribute="top" secondItem="6hy-H2-qGN" secondAttribute="bottom" constant="12" id="PwB-hW-3fY"/>
+                                        <constraint firstAttribute="trailing" secondItem="EiQ-D6-7Gk" secondAttribute="trailing" constant="44" id="Rxb-r6-zxp"/>
+                                        <constraint firstItem="DGN-W8-0Sf" firstAttribute="top" secondItem="E6U-JU-cSa" secondAttribute="top" constant="8" id="VM4-hr-bpj"/>
+                                        <constraint firstAttribute="bottom" secondItem="qPr-eg-JCn" secondAttribute="bottom" constant="8" id="c5c-1O-MUf"/>
+                                        <constraint firstAttribute="trailing" secondItem="6hy-H2-qGN" secondAttribute="trailing" constant="39" id="fWC-Au-jl3"/>
+                                        <constraint firstItem="qPr-eg-JCn" firstAttribute="leading" secondItem="E6U-JU-cSa" secondAttribute="leading" constant="10" id="lA1-XZ-bEw"/>
+                                        <constraint firstAttribute="trailing" secondItem="DGN-W8-0Sf" secondAttribute="trailing" constant="40" id="o9I-eH-562"/>
+                                    </constraints>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="J7Q-uv-K9A"/>
-                                    <constraint firstAttribute="height" constant="300" id="dgn-VV-ilW"/>
+                                    <constraint firstAttribute="height" constant="332" id="dgn-VV-ilW"/>
                                 </constraints>
                             </box>
                         </subviews>
@@ -254,7 +276,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="949"/>
+            <point key="canvasLocation" x="74" y="990.5"/>
         </scene>
     </scenes>
     <resources>
