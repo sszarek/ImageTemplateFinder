@@ -271,6 +271,7 @@
                         <outlet property="closeImageButton" destination="OGC-eQ-bJh" id="kjj-wO-qTc"/>
                         <outlet property="closeTemplateButton" destination="6hy-H2-qGN" id="5I7-3g-yhz"/>
                         <outlet property="imageView" destination="Tza-qa-nea" id="dL1-Ck-CGG"/>
+                        <outlet property="markTemplateButton" destination="EiQ-D6-7Gk" id="wtc-1u-fb5"/>
                         <outlet property="templateView" destination="qPr-eg-JCn" id="eNE-9P-gnN"/>
                     </connections>
                 </viewController>
