@@ -16,9 +16,17 @@ class ViewController: NSViewController {
         guard let url = getImageUrl() else { return }
         imageView.image = NSImage.init(contentsOf: url)
     }
+    @IBAction func closeImageButtonClicked(_ sender: Any) {
+        imageView.image = nil
+    }
+    
     @IBAction func openTemplateButtonClicked(_ sender: Any) {
         guard let url = getImageUrl() else { return }
         templateView.image = NSImage.init(contentsOf: url)
+    }
+    
+    @IBAction func closeTemplateButtonClicked(_ sender: Any) {
+        templateView.image = nil
     }
     
     override func viewDidLoad() {
