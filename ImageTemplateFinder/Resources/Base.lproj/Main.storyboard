@@ -173,7 +173,7 @@
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-eQ-bJh">
                                             <rect key="frame" x="37" y="15" width="122" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Close Image" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="taJ-BH-2ie">
+                                            <buttonCell key="cell" type="push" title="Close Image" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="taJ-BH-2ie">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -207,7 +207,7 @@
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-H2-qGN">
                                             <rect key="frame" x="34" y="205" width="134" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="push" title="Close Template" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UuM-nR-WJ7">
+                                            <buttonCell key="cell" type="push" title="Close Template" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UuM-nR-WJ7">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -246,6 +246,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="closeImageButton" destination="OGC-eQ-bJh" id="kjj-wO-qTc"/>
+                        <outlet property="closeTemplateButton" destination="6hy-H2-qGN" id="5I7-3g-yhz"/>
                         <outlet property="imageView" destination="Tza-qa-nea" id="dL1-Ck-CGG"/>
                         <outlet property="templateView" destination="qPr-eg-JCn" id="eNE-9P-gnN"/>
                     </connections>

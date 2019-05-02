@@ -12,21 +12,28 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var imageView: NSImageView!
     @IBOutlet weak var templateView: NSImageView!
+    @IBOutlet weak var closeImageButton: NSButton!
+    @IBOutlet weak var closeTemplateButton: NSButton!
+    
     @IBAction func openImageButtonClicked(_ sender: Any) {
         guard let url = getImageUrl() else { return }
         imageView.image = NSImage.init(contentsOf: url)
+        closeImageButton.isEnabled = true
     }
     @IBAction func closeImageButtonClicked(_ sender: Any) {
         imageView.image = nil
+        closeImageButton.isEnabled = false
     }
     
     @IBAction func openTemplateButtonClicked(_ sender: Any) {
         guard let url = getImageUrl() else { return }
         templateView.image = NSImage.init(contentsOf: url)
+        closeTemplateButton.isEnabled = true
     }
     
     @IBAction func closeTemplateButtonClicked(_ sender: Any) {
-        templateView.image = nil
+        templateView.image = NSImage(named: NSImage.Name("picture"))
+        closeTemplateButton.isEnabled = false
     }
     
     override func viewDidLoad() {
