@@ -219,6 +219,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="markTemplateButtonClicked:" target="XfG-lQ-9wD" id="YwZ-jg-MD5"/>
+                                            </connections>
                                         </button>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qPr-eg-JCn">
                                             <rect key="frame" x="10" y="8" width="180" height="180"/>

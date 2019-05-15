@@ -7,44 +7,52 @@
 //
 
 import Cocoa
+import CoreGraphics
 
 class ViewController: NSViewController {
-    
     @IBOutlet weak var imageView: NSImageView!
     @IBOutlet weak var templateView: NSImageView!
     @IBOutlet weak var closeImageButton: NSButton!
     @IBOutlet weak var closeTemplateButton: NSButton!
     @IBOutlet weak var markTemplateButton: NSButton!
-    
+
     @IBAction func openImageButtonClicked(_ sender: Any) {
         guard let url = getImageUrl() else { return }
         imageView.image = NSImage.init(contentsOf: url)
         closeImageButton.isEnabled = true
-        
+
         setMarkButtonAvailablity()
     }
     @IBAction func closeImageButtonClicked(_ sender: Any) {
         imageView.image = nil
         closeImageButton.isEnabled = false
-        
+
         setMarkButtonAvailablity()
     }
-    
+
     @IBAction func openTemplateButtonClicked(_ sender: Any) {
         guard let url = getImageUrl() else { return }
         templateView.image = NSImage.init(contentsOf: url)
         closeTemplateButton.isEnabled = true
-        
+
         setMarkButtonAvailablity()
     }
-    
+
     @IBAction func closeTemplateButtonClicked(_ sender: Any) {
         templateView.image = NSImage(named: NSImage.Name("picture"))
         closeTemplateButton.isEnabled = false
-        
+
         setMarkButtonAvailablity()
     }
-    
+
+    @IBAction func markTemplateButtonClicked(_ sender: Any) {
+        let result = OpenCVWrapper.findTemplate(
+            ImageTools.convertNSImageToCGImage(image: self.imageView.image!),
+            ImageTools.convertNSImageToCGImage(image: self.templateView.image!),
+            "TM_SQDIFF_NORMED"
+        )
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,23 +64,24 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    
+
     func setMarkButtonAvailablity() {
-        markTemplateButton.isEnabled = templateView.image != NSImage(named: NSImage.Name("picture")) && imageView.image != nil
+        markTemplateButton.isEnabled =
+            templateView.image != NSImage(named: NSImage.Name("picture")) &&
+            imageView.image != nil
     }
-    
+
     func getImageUrl() -> URL? {
         let dialog = NSOpenPanel()
         dialog.title = "Choose a .jpg file"
         dialog.showsHiddenFiles = false
         dialog.allowsMultipleSelection = false
         dialog.allowedFileTypes = ["jpg"]
-        
-        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+
+        if dialog.runModal() == NSApplication.ModalResponse.OK {
             return dialog.url
         }
-        
+
         return nil
     }
 }
-

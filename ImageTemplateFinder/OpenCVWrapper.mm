@@ -6,11 +6,16 @@
 //  Copyright © 2019 Stefan Szarek. All rights reserved.
 //
 
-#import "OpenCVWrapper.h"
-
 #ifdef __cplusplus
 #import <opencv2/opencv.hpp>
 #endif
+
+#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "ImageTemplateFinder-Swift.h"
+
+#import "OpenCVWrapper.h"
 
 using namespace cv;
 
@@ -19,20 +24,32 @@ using namespace cv;
     return [NSString stringWithFormat:@"OpenCV version: %s", CV_VERSION];
 }
 
-+ (void) findTemplate: (NSString*)imgPath :(NSString*)templPath :(NSString*)method {
-    cv::OutputArray result = cv::_OutputArray();
-    cv::Mat image = cv::imread(imgPath.UTF8String);
-    cv::Mat templ = cv::imread(templPath.UTF8String);
++ (cv::Mat) convertNSImageToMat: (CGImageRef) image {
+    CGColorSpaceRef colorSpace = CGImageGetColorSpace(image);
+    CGFloat cols = CGImageGetWidth(image);
+    CGFloat rows = CGImageGetHeight(image);
     
-    InputArray imInput = cv::_InputArray(image);
-    InputArray templInput = cv::_InputArray(image);
+    cv::Mat cvMat(rows, cols, CV_8UC4);
     
-    cv::matchTemplate(imInput, templInput, result, [self mapMethodType: method]);
+    CGContextRef contextRef = CGBitmapContextCreate(cvMat.data, cols, rows, 8, cvMat.step[0], colorSpace, kCGImageAlphaNoneSkipLast | kCGBitmapByteOrderDefault);
+    CGContextDrawImage(contextRef, CGRectMake(0,0, cols, rows), image);
+    CGContextRelease(contextRef);
+    
+    return cvMat;
 }
 
-+ (cv::_OutputArray) templateFinder:(InputArray)image :(InputArray)templ :(NSString*) method {
-    cv::OutputArray result = cv::_OutputArray();
-    cv::matchTemplate(image, templ, result, [self mapMethodType: method]);
++(FindTemplateResult *) findTemplate: (CGImageRef)image :(CGImageRef)templ :(NSString*)method {
+    cv::Mat outputMat = cv::Mat();
+    cv::Mat imgMat = [self convertNSImageToMat:(image)];
+    cv::Mat templMat = [self convertNSImageToMat:(templ)];
+
+    cv::matchTemplate(imgMat, templMat, outputMat, [self mapMethodType: method]);
+    
+    double minValue, maxValue;
+    cv::Point minLoc, maxLoc;
+    cv::minMaxLoc(outputMat, &minValue, &maxValue, &minLoc, &maxLoc);
+    FindTemplateResult* result = [[FindTemplateResult alloc] initWithXCoord:maxLoc.x yCoord:maxLoc.y];
+    
     return result;
 }
 
